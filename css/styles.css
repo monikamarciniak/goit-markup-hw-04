@@ -196,9 +196,9 @@ top: 774px;
 border-radius: 4px;
 }
 
-/* .our-benefits-icon {
-    display: block;
-} */
+.our-benefits-icon {
+    justify-content:center;
+}
 
 .our-benefits-title {
 font-size: 14px;
@@ -304,6 +304,23 @@ text-align: center;
 color: var(--secondary-color);
 }
 /*===END OUR TEAM===*/
+
+
+/*===OUR CLIENTS===*/
+
+.clients .container {
+    justify-content: center;
+}
+.clients-title {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.167;
+letter-spacing: 0.03em;
+text-align: center;
+padding-top: 94px;
+
+}
+/*=== END OUR CLIENTS===*/
 
 
 /*===PORTFOLIO===*/
