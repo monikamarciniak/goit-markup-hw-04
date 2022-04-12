@@ -7,6 +7,7 @@
     --third-color: #FFFFFF;
     --container-color: #2F303A;
     --background-color: #F5F4FA;
+    --icon-color: #afb1b8;
 }
 
 body {
@@ -57,7 +58,7 @@ img {
     align-items: center;
 }
 
-.nav-list-item:not(last child) {
+.nav-list-item:not(:last child) {
     padding-right: 46px;
 }
 .header .contact-item {
@@ -65,7 +66,7 @@ img {
 }
 
 .nav-list-item:last-child {
-    padding-right: 345px;
+    padding-right: 360px;
 }
 
 .logo-header {
@@ -98,6 +99,10 @@ margin-right: 93px;
     padding-top: 32px;
 }
 
+.nav-list-item {
+    padding-right: 46px;
+}
+
 .nav-list-link {
     color: var(--main-color);
 }
@@ -107,6 +112,10 @@ margin-right: 93px;
     color: var(--secondary-color);
 }
 
+.contact-mail {
+    padding-right: 30px;
+}
+
 .nav-list-link:hover,
 .nav-list-link:focus,
 .contact-mail:hover,
@@ -114,6 +123,11 @@ margin-right: 93px;
 .contact-phone-number:hover,
 .contact-phone-number:focus {
     color: var(--hover-color);
+}
+
+.contact-logo:hover,
+.contact-logo:focus {
+    fill: var(--hover-color);
 }
 /*===END MENU===*/
 
@@ -131,6 +145,7 @@ margin-right: 93px;
 width: 1600px;
 left: 0px;
 top: 80px;
+margin-bottom: 94px;
 }
     
 
@@ -175,7 +190,6 @@ margin-bottom: 40px;
 .benefits .container {
     display: flex;
     align-items: center;
-    padding-top: 94px;
 }
 .our-benefits-list {
     display: flex;
@@ -195,6 +209,7 @@ width: 270px;
 left: 215px;
 top: 774px;
 border-radius: 4px;
+justify-content: center;
 }
 
 .our-benefits-icon {
@@ -252,15 +267,19 @@ align-items: center;
 .our-team .container {
     align-items: center;
     background-color: #F5F4FA;
-    height: 648px;
-    left: 0px;
-    top: 1457px;
+    height: auto;
+    width: auto;
+    /* left: 0px; */
+    /* top: 1457px; */
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .our-team-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: center;
+    padding-bottom: 94px;
 }
 
 .our-team-title {
@@ -276,12 +295,12 @@ padding: 94px 0px 50px;
     background-color: var(--third-color);
     height: 428px;
 width: 270px;
-left: nullpx;
-top: nullpx;
 border-radius: 4px;
 box-shadow: 0px 2px 1px 0px #00000033;
 box-shadow: 0px 1px 1px 0px #00000024;
 box-shadow: 0px 1px 3px 0px #0000001F;
+/* padding-bottom: 94px; */
+margin-right: 30px;
 }
 
 .our-team-name {
@@ -304,26 +323,33 @@ color: var(--secondary-color);
 .our-team-social-list {
     display: flex;
     align-items: center;
-    justify-content: space-around;  
+    justify-content: center; 
+    width: 206px;
+    height: 56px;
+    padding-right: 10px;
+    margin: auto;   
 }
 
 .our-team-social-icon {
     width: 20px; 
     height: 20px;
+    fill: var(--icon-color);
 }
 
 .our-team-social-list-links {
     display: flex;
     width: 44px;
     height: 44px;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     border-radius: 50%;
     align-items: center;
     justify-content: center;
 }
 
 .our-team-social-list-links:hover,
-.our-team-social-list-links:focus {
+.our-team-social-list-links:focus,
+.our-team-social-icon:hover,
+.our-team-social-icon:focus {
     fill: var(--third-color);
     background-color: var(--hover-color);
 }
@@ -336,7 +362,7 @@ color: var(--secondary-color);
 
 .clients .container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .clients-title {
 font-size: 36px;
@@ -352,15 +378,23 @@ padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 94px;
 }
 .clients-list-item {
-    padding-right: 30px;
-    padding-bottom: 94px;   
+    border: 1px solid #AFB1B8; 
+    margin-right: 30px;  
 }
 .clients-icon {
-   border: 1px solid #AFB1B8;
-
+   fill: var(--icon-color);
 }
+
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: var(--hover-color);
+}
+
+
+
 /*=== END OUR CLIENTS===*/
 
 
