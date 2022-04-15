@@ -557,9 +557,21 @@ padding-left: 215px;
     padding-right: 70px;
 }
 
+.container-social {
+    width: 206px;
+    height: 80px;
+    padding-top: 16px;
+}
 .footer-social-links-title {
     color: var(--third-color);
     padding-bottom: 20px;
+    
+font-size: 14px;
+font-weight: 700;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-align: left;
+
 }
 
 .footer-social-links-list {
@@ -582,8 +594,8 @@ padding-left: 215px;
 }
 
 .footer-social-links {
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    padding: 12px;
 }
 
 .footer-social-links-icon {
