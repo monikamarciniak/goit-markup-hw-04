@@ -446,6 +446,7 @@ border-color: #F5F4FA;
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background-color: var(--hover-color);
+    color: var(--third-color);
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
